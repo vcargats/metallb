@@ -1,3 +1,6 @@
 address:
+  # the IP address to listen to
   from: ""
+
+  # to listen to a range of IP addresses
   to: ""

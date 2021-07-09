@@ -23,3 +23,4 @@ helm search repo metallb
 
 ## Configuration
 
+Use the `address.from`  value to specify the IP address to listen to or use `address.from` and `address.to` for an IP reange
