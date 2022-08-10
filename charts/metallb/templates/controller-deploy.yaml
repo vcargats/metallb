@@ -25,12 +25,13 @@ spec:
       - args:
         - --port=7472
         - --config=config
+        - --log-level={{ .Values.controller.loglevel | default .Values.loglevel }}
         env:
         - name: METALLB_ML_SECRET_NAME
           value: memberlist
         - name: METALLB_DEPLOYMENT
           value: controller
-        image: quay.io/metallb/controller:main
+        image: quay.io/metallb/controller:{{ .Values.controller.version | default .Values.version }}
         name: controller
         ports:
         - containerPort: 7472

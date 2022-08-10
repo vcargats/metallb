@@ -4,3 +4,14 @@ address:
 
   # to listen to a range of IP addresses
   to: ""
+
+loglevel: debug
+version: v0.12.1
+
+controller:
+  loglevel: info
+  version: v0.12.1
+
+speaker:
+  loglevel: info
+  version: v0.12.1

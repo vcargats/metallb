@@ -1,7 +1,7 @@
 apiVersion: v1
-description: A Helm chart for Tekton Pipelines
+description: A Helm chart for MetalLB load balancer
 name: metallb
-version: 1.0.0
-appVersion: 1.0.0
+version: 0.0.3
+appVersion: 0.0.3
 icon: https://raw.githubusercontent.com/metallb/metallb/main/website/static/images/logo/metallb-blue.png
-home: https://github.com/jenkins-x-charts/metallb
+home: https://github.com/vcargatsorg/metallb

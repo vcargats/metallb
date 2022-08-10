@@ -24,6 +24,7 @@ spec:
       - args:
         - --port=7472
         - --config=config
+        - --log-level={{ .Values.speaker.loglevel | default .Values.loglevel }}
         env:
         - name: METALLB_NODE_NAME
           valueFrom:
@@ -49,7 +50,7 @@ spec:
             secretKeyRef:
               name: memberlist
               key: secretkey
-        image: quay.io/metallb/speaker:main
+        image: quay.io/metallb/speaker:{{ .Values.speaker.version | default .Values.version }}
         name: speaker
         ports:
         - containerPort: 7472
